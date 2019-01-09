@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Random</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<style>
+body{
+    background:skyblue;
+    padding:30px;
+    color:#fff;
+}
+h1{
+    font-size:48px;
+    text-tranform:uppercase;
+}
+p{
+    text-align:center;
+}
+</style>
+<body>
+    <% include partials/nav.ejs %>
+    <h1>Welcome to the profile of <%= person.name %> dept <%=person.dept %> LKBS!</h1>
+    <p>
+    you wont find a better website</p>
+    <u>
+    <form id="ps" method="POST" action="/profile">
+    <input type="text" name="who" /><br/><br/>
+        <input type="text" name="dept" /><br/><br/>
+        <input type="text" name="email" /><br/><br/>
+        <input type="submit" value="submit"/>
+        </u>
+        </form>
+</body>
+</html>
