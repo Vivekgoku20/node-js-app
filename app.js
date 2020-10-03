@@ -78,7 +78,7 @@
 
 
 // var server=http.createServer(function(req,res){
-	
+// print()	
 // 	console.log(req.url);
 // 	if(req.url === '/hoe')
 // 	{	
@@ -99,6 +99,7 @@
 var express=require('express');
 var bodyParser=require('body-parser');
 var app=express();
+var app1 = express();
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 app.set('view engine','ejs');
